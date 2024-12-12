@@ -1,0 +1,111 @@
+@import (less)'Variables.less';
+*{
+    margin: @zero;
+    padding: @zero;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    background-color: #141415;
+    overflow-x: hidden;
+}
+header{
+    width: 100%;
+    height: 90px;
+    background-color: #313131;
+    display: @flex;
+    justify-content: @center;
+    img{
+        align-self: @center;
+        cursor: @cursor;
+    }
+}
+main{
+    .PostProduction{
+        display: @flex;
+        flex-direction: column;
+        align-items: @center;
+        gap: 30px;
+        margin-top: 5%;
+        p{
+        
+            color: #FFFFFF;
+            font-size: 40px;
+            font-weight: @bolder;
+            line-height: 125%;
+            width: 560px;
+            height: 98px;
+        }
+        button{
+            width: 10%;
+            height: 24px;
+            color: #51ACFF;
+            text-decoration: none;
+            background-color: #141415;
+            cursor: @cursor;
+            &:hover{
+                background-color: #ad0958;
+                text-decoration: underline;
+            }
+        }
+    }
+    .ImacMockup{
+        width: 100%;
+        height: 404px;
+        background: url('../Img/final_cut_pro_x_imac_hdr_support_201712141513260184864.jpg')no-repeat;
+        margin-left: 34%;
+        margin-top: 3%;
+        animation-name: IMocUpChange;
+        animation-delay: 0;
+        animation-iteration-count: infinite;
+        animation-duration: 30s;
+    }
+    .Advantages{
+        display: @flex;
+        gap: 10%;
+        justify-content: @center;
+        margin-top: 5%;
+        p{
+            color: #FFFFFF;
+            span{
+                font-size: 30px;
+                font-weight: @bolder;
+            }
+        }      
+    }  
+}
+footer{
+    display: @flex;
+    width: 100%;
+    height: 300px;
+    background-color: #313131;
+    justify-content: @center;
+    flex-direction: column;
+    align-items: @center;
+    .AllRights{
+        color: #616161;
+    }
+    .Email{
+        margin-top: 2%;
+        a{
+            color: #51ACFF;
+            text-decoration: none;
+        }
+        .AllRights
+    }
+    .SocialIcons{
+        display: @flex;
+        width: 50%;
+        height: 20px;
+        align-items: @center;
+        justify-content: @center;
+        gap: 30px;
+        margin-top: 5%;
+        img{
+            cursor: @cursor;
+            &:hover{
+                background-color: aquamarine;
+                filter: hue-rotate(10deg);
+            }
+        }
+    }
+}

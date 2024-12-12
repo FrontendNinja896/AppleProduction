@@ -1,0 +1,25 @@
+@media screen and (min-width: 300px) and (max-width: 1200px) {
+  main .PostProduction button {
+    width: 400px;
+  }
+  main .ImacMockup {
+    margin-left: -4%;
+  }
+  .SocialIcons img {
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 200px) and (max-width: 300px) {
+  header {
+    width: 140%;
+  }
+  footer {
+    width: 140%;
+  }
+  main .PostProduction button {
+    width: 400px;
+  }
+  main .ImacMockup {
+    margin-left: -4%;
+  }
+}
